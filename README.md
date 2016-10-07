@@ -1,6 +1,9 @@
 # Sit Up CLI
 > :bow: Reminder to sit up straight.
 
+## Exemple
+<img src='https://github.com/BuKinoshita/sit-up/blob/master/demo.png' width="300px" />
+
 ## Install
 ```bash
 $ npm install -g sit-up
