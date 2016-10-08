@@ -2,7 +2,7 @@
 > :bow: Reminder to sit up straight.
 
 ## Exemple
-<img src='https://github.com/BuKinoshita/sit-up/blob/master/demo.png' width="300px" />
+<img src='https://raw.githubusercontent.com/BuKinoshita/sit-up/master/demo.png' width="300px" />
 
 ## Install
 ```bash

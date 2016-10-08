@@ -1,6 +1,6 @@
 {
   "name": "sit-up",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Reminder to sit up straight",
   "main": "cli.js",
   "scripts": {
@@ -23,6 +23,7 @@
     "url": "https://github.com/BuKinoshita/sit-up/issues"
   },
   "dependencies": {
+    "meow": "^3.7.0",
     "osx-notifier": "^0.2.2"
   },
   "homepage": "https://github.com/BuKinoshita/sit-up#readme",

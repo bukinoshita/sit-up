@@ -2,19 +2,38 @@
 
 'use strict'
 
+const meow = require('meow')
 const notify = require('osx-notifier')
-const interval = 60 * 5000
 
-const notification = () => {
-  notify({
-    type: 'info',
-    title: 'Hey Bro!',
-    message: 'Sit up straight!!!!!',
-  })
+const cli = meow(`
+  Usage
+    $ sit-up
+    $ sit-up <time>
+
+  Examples
+    $ sit-up (default: 5)
+    $ sit-up 10
+
+  Options
+    -h, --help Help
+`)
+
+const prop = cli.input[0]
+
+if (cli.flags.help || cli.flags.h) {
+  cli.showHelp()
+} else {
+  const timer = (value = 5) => 60000 * value
+  const newTimer = timer(prop)
+  let timerInMinutes = newTimer / 60000
+
+  console.log(`Sit up straight and go to work! We will remind you again in ${timerInMinutes} minutes.`)
+
+  setInterval(() => {
+    notify({
+      type: 'info',
+      title: 'Hey Bro!',
+      message: 'Sit up straight!!!!!',
+    })
+  }, newTimer)
 }
-
-console.log('Sit up straight and go to work! We will remind you again in 5 minutes')
-
-setInterval(() => {
-  notification()
-}, interval)
