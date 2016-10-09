@@ -1,6 +1,6 @@
 {
   "name": "sit-up",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Reminder to sit up straight",
   "main": "cli.js",
   "scripts": {
