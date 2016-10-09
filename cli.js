@@ -4,6 +4,7 @@
 
 const meow = require('meow')
 const notify = require('osx-notifier')
+const timer = require('./lib/timer')
 
 const cli = meow(`
   Usage
@@ -23,7 +24,6 @@ const prop = cli.input[0]
 if (cli.flags.help || cli.flags.h) {
   cli.showHelp()
 } else {
-  const timer = (value = 5) => 60000 * value
   const newTimer = timer(prop)
   let timerInMinutes = newTimer / 60000
 
