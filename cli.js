@@ -25,7 +25,7 @@ if (cli.flags.help || cli.flags.h) {
   cli.showHelp()
 } else {
   const newTimer = timer(prop)
-  let timerInMinutes = newTimer / 60000
+  const timerInMinutes = newTimer / 60000
 
   console.log(`Sit up straight and go to work! We will remind you again in ${timerInMinutes} minutes.`)
 
@@ -33,7 +33,7 @@ if (cli.flags.help || cli.flags.h) {
     notify({
       type: 'info',
       title: 'Hey Bro!',
-      message: 'Sit up straight!!!!!',
+      message: 'Sit up straight!!!!!'
     })
   }, newTimer)
 }

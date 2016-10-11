@@ -4,7 +4,7 @@
   "description": "Reminder to sit up straight",
   "main": "cli.js",
   "scripts": {
-    "test": "ava -v"
+    "test": "xo && ava -v"
   },
   "repository": {
     "type": "git",
@@ -34,6 +34,12 @@
     "node": ">=4"
   },
   "devDependencies": {
-    "ava": "^0.16.0"
+    "ava": "^0.16.0",
+    "xo": "^0.17.0"
+  },
+  "xo": {
+    "esnext": true,
+    "space": true,
+    "semicolon": false
   }
 }
