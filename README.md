@@ -2,6 +2,8 @@
 > :bow: Reminder to sit up straight.
 
 [![Build Status](https://travis-ci.org/BuKinoshita/sit-up.svg?branch=master)](https://travis-ci.org/BuKinoshita/sit-up)
+[![GitHub release](https://img.shields.io/github/release/bukinoshita/sit-up.svg)](https://www.npmjs.com/package/sit-up)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BuKinoshita/sit-up/master/LICENSE)
 
 ## Exemple
 <img src='https://raw.githubusercontent.com/BuKinoshita/sit-up/master/demo.png' width="300px" />
