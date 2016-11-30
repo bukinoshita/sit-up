@@ -24,8 +24,7 @@
   },
   "dependencies": {
     "meow": "^3.7.0",
-    "node-notifier": "^4.6.1",
-    "osx-notifier": "^0.2.2"
+    "node-notifier": "^4.6.1"
   },
   "homepage": "https://github.com/BuKinoshita/sit-up#readme",
   "bin": {
