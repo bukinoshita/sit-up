@@ -9,15 +9,16 @@ const notification = require('./lib/notification')
 
 const cli = meow(`
   Usage
-    $ sit-up
-    $ sit-up <time>
+    $ sit-up                  Remind to sit straight every 5 minutes
+    $ sit-up <time>           Remind to sit straight every X minutes
 
   Examples
     $ sit-up (default: 5)
     $ sit-up 10
 
   Options
-    -h, --help Help
+    -h, --help                Show help options
+    -v, --version             Show version
 `)
 
 const prop = cli.input[0]
