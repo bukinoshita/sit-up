@@ -1,16 +1,26 @@
 {
   "name": "sit-up",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "description": "Reminder to sit up straight",
   "main": "cli.js",
   "repository": "https://github.com/bukinoshita/sit-up.git",
   "author": "Bu Kinoshita <bukinoshita@gmail.com>",
   "license": "MIT",
-  "keywords": ["cli", "sit", "up", "productivity", "health"],
+  "keywords": [
+    "cli",
+    "sit",
+    "up",
+    "productivity",
+    "health"
+  ],
   "bin": {
     "sit-up": "cli.js"
   },
-  "files": ["lib", "cli.js", "chair.png"],
+  "files": [
+    "lib",
+    "cli.js",
+    "chair.png"
+  ],
   "scripts": {
     "test": "xo && ava"
   },
@@ -24,6 +34,8 @@
     "xo": "^0.18.2"
   },
   "xo": {
-    "extends": ["prettier"]
+    "extends": [
+      "prettier"
+    ]
   }
 }
