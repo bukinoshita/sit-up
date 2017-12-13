@@ -3,43 +3,26 @@
   "version": "0.2.1",
   "description": "Reminder to sit up straight",
   "main": "cli.js",
-  "scripts": {
-    "test": "xo && ava -v"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BuKinoshita/sit-up.git"
-  },
-  "keywords": [
-    "cli",
-    "sit",
-    "up",
-    "productivity",
-    "health"
-  ],
-  "author": "Bu Kinoshita",
+  "repository": "https://github.com/bukinoshita/sit-up.git",
+  "author": "Bu Kinoshita <bukinoshita@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/BuKinoshita/sit-up/issues"
-  },
-  "dependencies": {
-    "meow": "^3.7.0",
-    "node-notifier": "^4.6.1"
-  },
-  "homepage": "https://github.com/BuKinoshita/sit-up#readme",
+  "keywords": ["cli", "sit", "up", "productivity", "health"],
   "bin": {
     "sit-up": "cli.js"
   },
-  "engines": {
-    "node": ">=4"
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "dependencies": {
+    "meow": "^4.0.0",
+    "node-notifier": "^5.1.2"
   },
   "devDependencies": {
-    "ava": "^0.16.0",
-    "xo": "^0.17.0"
+    "ava": "^0.24.0",
+    "eslint-config-prettier": "^2.9.0",
+    "xo": "^0.18.2"
   },
   "xo": {
-    "esnext": true,
-    "space": true,
-    "semicolon": false
+    "extends": ["prettier"]
   }
 }
