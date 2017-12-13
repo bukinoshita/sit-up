@@ -10,6 +10,7 @@
   "bin": {
     "sit-up": "cli.js"
   },
+  "files": ["lib", "cli.js", "chair.png"],
   "scripts": {
     "test": "xo && ava"
   },
