@@ -3,6 +3,7 @@
 'use strict'
 
 const meow = require('meow')
+
 const timer = require('./lib/timer')
 const notification = require('./lib/notification')
 
@@ -20,15 +21,12 @@ const cli = meow(`
 `)
 
 const prop = cli.input[0]
+const newTimer = timer(prop)
+const timerInMinutes = newTimer / 60000
 
-if (cli.flags.help || cli.flags.h) {
-  cli.showHelp()
-} else {
-  const newTimer = timer(prop)
-  const timerInMinutes = newTimer / 60000
+notification()
+console.log(
+  `Sit up straight and we will remind you again in ${timerInMinutes} minutes.`
+)
 
-  notification()
-  console.log(`Sit up straight and we will remind you again in ${timerInMinutes} minutes.`)
-
-  setInterval(() => notification(), newTimer)
-}
+setInterval(() => notification(), newTimer)
