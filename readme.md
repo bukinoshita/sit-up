@@ -26,6 +26,10 @@ $ sit-up --help
     -v, --version             Show version
 ```
 
+## Demo
+
+<img src="sit-up.gif"/>
+
 ## License
 
 MIT © [Bu Kinoshita](https://bukinoshita.io)
